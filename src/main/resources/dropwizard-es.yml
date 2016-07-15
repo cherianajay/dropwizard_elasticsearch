@@ -1,0 +1,14 @@
+nodeClient: false
+clusterName: elasticsearch
+servers: 127.0.0.1
+logging:
+  level: ALL
+  loggers: 
+    cherianajay.dw: INFO
+    io.dropwizard: INFO
+        
+appenders:
+    - type: console
+      threshold: ALL
+      timeZone: UTC
+      target: stdout
