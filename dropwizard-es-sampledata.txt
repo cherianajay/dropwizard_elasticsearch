@@ -1,0 +1,152 @@
+
+curl  -XPUT 'http://localhost:9200/employee_index'  -d'{
+  "mappings": {
+    "employee": {
+      "properties": {
+        "empId": {
+          "type": "string"
+        },  
+	"firstName": {
+          "type": "string"
+        },
+	"lastName": {
+          "type": "string"
+        },
+	"jobTitle": {
+          "type": "string"
+        },
+	"department": {
+          "type": "string"
+        },
+	"emailAddress": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}'
+
+
+curl -XPUT "http://localhost:9200/employee_index/employee/1100/_create" -d '{"empId":"1100","firstName":"Josephine","lastName":"Darakjy","jobTitle":"WATER RATE TAKER","department":"WATER MGMNT","emailAddress":"jbutt@gmail.com"}'
+
+curl -XPUT "http://localhost:9200/employee_index/employee/1101/_create" -d '  
+    {
+        "empId": "1101",
+        "firstName": "Art",
+        "lastName": "Venere",
+        "jobTitle": "POLICE OFFICER",
+        "department": "POLICE",
+        "emailAddress": "josephine_darakjy@darakjy.org"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1102/_create" -d '    {
+        "empId": "1102",
+        "firstName": "Lenna",
+        "lastName": "Paprocki",
+        "jobTitle": "CHIEF CONTRACT EXPEDITER",
+        "department": "FLEET MANAGEMNT",
+        "emailAddress": "art@venere.org"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1103/_create" -d '    {
+        "empId": "1103",
+        "firstName": "Donette",
+        "lastName": "Foller",
+        "jobTitle": "CIVIL ENGINEER IV",
+        "department": "WATER MGMNT",
+        "emailAddress": "lpaprocki@hotmail.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1104/_create" -d '    {
+        "empId": "1104",
+        "firstName": "Simona",
+        "lastName": "Morasca",
+        "jobTitle": "ELECTRICAL MECHANIC",
+        "department": "WATER MGMNT",
+        "emailAddress": "donette.foller@cox.net"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1105/_create" -d '    {
+        "empId": "1105",
+        "firstName": "Mitsue",
+        "lastName": "Tollner",
+        "jobTitle": "POLICE OFFICER",
+        "department": "POLICE",
+        "emailAddress": "simona@morasca.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1106/_create" -d '    {
+        "empId": "1106",
+        "firstName": "Leota",
+        "lastName": "Dilliard",
+        "jobTitle": "FIREFIGHTER",
+        "department": "FIRE",
+        "emailAddress": "mitsue_tollner@yahoo.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1107/_create" -d '    {
+        "empId": "1107",
+        "firstName": "Sage",
+        "lastName": "Wieser",
+        "jobTitle": "FOSTER GRANDPARENT",
+        "department": "FAMILY & SUPPORT",
+        "emailAddress": "leota@hotmail.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1108/_create" -d '    {
+        "empId": "1108",
+        "firstName": "Kris",
+        "lastName": "Marrier",
+        "jobTitle": "CLERK III",
+        "department": "FAMILY & SUPPORT",
+        "emailAddress": "sage_wieser@cox.net"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1109/_create" -d '    {
+        "empId": "1109",
+        "firstName": "Minna",
+        "lastName": "Amigon",
+        "jobTitle": "ELECTRICAL MECHANIC",
+        "department": "TRANSPORTN",
+        "emailAddress": "kris@gmail.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1110/_create" -d '    {
+        "empId": "1110",
+        "firstName": "Abel",
+        "lastName": "Maclead",
+        "jobTitle": "POLICE OFFICER",
+        "department": "POLICE",
+        "emailAddress": "minna_amigon@yahoo.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1111/_create" -d '    {
+        "empId": "1111",
+        "firstName": "Kiley",
+        "lastName": "Caldarera",
+        "jobTitle": "FIREFIGHTER (PER ARBITRATORS AWARD)-PARAMEDIC",
+        "department": "FIRE",
+        "emailAddress": "amaclead@gmail.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1112/_create" -d '    {
+        "empId": "1112",
+        "firstName": "Graciela",
+        "lastName": "Ruta",
+        "jobTitle": "POLICE OFFICER",
+        "department": "POLICE",
+        "emailAddress": "kiley.caldarera@aol.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1113/_create" -d '    {
+        "empId": "1113",
+        "firstName": "Cammy",
+        "lastName": "Albares",
+        "jobTitle": "PARAMEDIC",
+        "department": "FIRE",
+        "emailAddress": "gruta@cox.net"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1114/_create" -d '    {
+        "empId": "1114",
+        "firstName": "Mattie",
+        "lastName": "Poquette",
+        "jobTitle": "ENGINEERING TECHNICIAN V",
+        "department": "WATER MGMNT",
+        "emailAddress": "calbares@gmail.com"
+    }'
+curl -XPUT "http://localhost:9200/employee_index/employee/1115/_create" -d '    {
+        "empId": "1115",
+        "firstName": "Meaghan",
+        "lastName": "Garufi",
+        "jobTitle": "FIREFIGHTER",
+        "department": "FIRE",
+        "emailAddress": "mattie@aol.com"
+    }'
