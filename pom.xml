@@ -58,7 +58,7 @@
 								<transformer
 									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<manifestEntries>
-										<Main-Class>com.glenware.dropwizard.OfficeLocationApplication</Main-Class>
+										<Main-Class>cherianajay.dw.es.ElasticSearchApplication</Main-Class>
 									</manifestEntries>
 								</transformer>
 								<transformer
